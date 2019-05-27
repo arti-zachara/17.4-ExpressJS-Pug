@@ -14,10 +14,7 @@ app.get("/", function(req, res) {
 
 // ----- GET: login (pug)
 app.get("/login", function(req, res) {
-  res.render("login.pug", {
-    first_name: req.query.first_name,
-    last_name: req.query.last_name
-  });
+  res.render("login.pug");
 });
 
 // ----- GET: logged (pug)
@@ -27,7 +24,7 @@ app.get("/auth/google", function(req, res) {
     last_name: req.query.last_name
   };
   console.log(response);
-  res.render("logged.pug");
+  res.render("logged.pug", response);
 });
 
 var server = app.listen(3000, "localhost", function() {
