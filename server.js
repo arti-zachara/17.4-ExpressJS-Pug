@@ -5,7 +5,7 @@ var app = express();
 app.set("view engine", "pug");
 app.set("views", "./views");
 
-app.use(express.static("views")); //is it really necessary?
+app.use(express.static("css")); //is it really necessary?
 
 // ----- GET: main page (pug)
 app.get("/", function(req, res) {
