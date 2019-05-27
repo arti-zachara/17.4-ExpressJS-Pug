@@ -1,0 +1,17 @@
+html
+    head
+        title Login page (ExpressJS Pug template)
+        link(rel='stylesheet', href='../css/style.css')
+    body
+        include ./header.pug
+        h2 Please, log into your "account"
+        form
+            div.form-group
+                label(for="first_name") First Name:
+                input(type="text" placeholder="Enter your first name" name="first_name" required)
+            div.form-group
+                label(for="last_name") Last Name:
+                input(type="last_name" placeholder="Enter your last name" name="last_name" required)/
+            button.login(type="submit") 
+                a(href="/auth/google") Log in
+        include ./footer.pug

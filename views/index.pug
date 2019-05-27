@@ -1,0 +1,13 @@
+html
+    head
+        title Start page (ExpressJS Pug template)
+        link(rel='stylesheet', href='../css/style.css')
+    body
+        include ./header.pug
+
+        h2 Hello, Stranger!
+        p Please, log in to continue
+        button.login
+            a(href="/login") Log in
+
+        include ./footer.pug
