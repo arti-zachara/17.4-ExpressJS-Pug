@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/arti-zachara/17.4-ExpressJS-Pug/issues"
   },
-  "homepage": "https://github.com/arti-zachara/17.4-ExpressJS-Pug#readme"
+  "homepage": "https://github.com/arti-zachara/17.4-ExpressJS-Pug#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pug": "^2.0.3"
+  }
 }
