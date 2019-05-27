@@ -25,22 +25,6 @@ app.get("/auth/google", function(req, res) {
   res.render("logged.pug");
 });
 
-// ----- Middleware
-app.use("/store", function(req, res, next) {
-  console.log("Hello, this is middleware in your /store request!");
-  next();
-});
-
-// ----- GET: store
-app.get("/store", function(req, res) {
-  res.send("This is the store");
-});
-
-// ----- GET: first template (pug)
-app.get("/first-template", function(req, res) {
-  res.render("first-template");
-});
-
 var server = app.listen(3000, "localhost", function() {
   var host = server.address().address;
   var port = server.address().port;
