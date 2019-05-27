@@ -22,6 +22,11 @@ app.get("/login", function(req, res) {
 
 // ----- GET: logged (pug)
 app.get("/auth/google", function(req, res) {
+  const response = {
+    first_name: req.query.first_name,
+    last_name: req.query.last_name
+  };
+  console.log(response);
   res.render("logged.pug");
 });
 
